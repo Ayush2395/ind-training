@@ -1,0 +1,3 @@
+function alertFn() {
+  alert('Hello')
+}

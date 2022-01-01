@@ -1,0 +1,46 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.img-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.img-box {
+  position: relative;
+  top: 80px;
+}
+
+.intro {
+  position: relative;
+  left: 50px;
+  top: 120px;
+  width: 150px;
+}
+
+.intro span {
+  font-size: 20px;
+  color: rgb(58, 58, 255);
+}
+
+.intro p {
+  width: 320px;
+  font-size: 18px;
+}
+
+.intro h3 {
+  color: rgb(255, 32, 88);
+}
+
+.button {
+  /* position: relative; */
+  top: 120px;
+  left: 80px;
+}
+
+.form-page {
+  min-height: 100vh;
+  margin-top: 20px;
+}

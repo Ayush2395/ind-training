@@ -1,0 +1,12 @@
+{
+  "name": "ind-train",
+  "version": "1.0.0",
+  "description": "this is indutrial training video",
+  "main": "server.js",
+  "author": "Ayush",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

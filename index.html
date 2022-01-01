@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Training</title>
+
+    <!-- Bootstrap CSS link -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Home Section Start -->
+    <div class="home-page">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WebApp</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="intro">
+              <span>Hi, Its me</span>
+              <h1>Ayush</h1>
+              <h3>Web Developer</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corrupti sed quasi, ea eum voluptatibus blanditiis!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="img-box">
+              <img
+                src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Profile-pic"
+              />
+            </div>
+            <button
+              href="#contact"
+              class="button btn btn-lg position-relative btn-outline-success"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home Section End -->
+
+    <!-- Form page start -->
+    <div class="container form-page" id="#contact">
+      <h1>Form page</h1>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >First name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label"
+          >Last name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput2"
+          placeholder="Enter last name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label">Subject</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          placeholder="Your subject"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput4" class="form-label"
+          >Enter Email</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput4"
+          placeholder="example@admin.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea5" class="form-label"
+          >Message</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea5"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <button onclick="alertFn()" class="btn btn-outline-warning">
+        Send
+      </button>
+    </div>
+    <!-- Form page end -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom script -->
+    <!-- <script>
+      function sendButton() {
+        alert("Message was sent");
+      }
+    </script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
