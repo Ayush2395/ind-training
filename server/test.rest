@@ -1,0 +1,10 @@
+POST http://localhost:3000/send
+Content-Type: application/json
+
+{
+    "firstname":"Bhanu",
+    "lastname":"Partap",
+    "subject":"coding",
+    "email":"admin@admin.com",
+    "message":"Dani Daniel"
+}

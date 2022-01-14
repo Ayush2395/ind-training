@@ -45,7 +45,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Form</a>
+                <a class="nav-link" href="#contact">Form</a>
               </li>
             </ul>
           </div>
@@ -85,76 +85,69 @@
     <!-- Home Section End -->
 
     <!-- Form page start -->
-    <div class="container form-page" id="#contact">
+    <form method="POST" action="send" class="container form-page" id="#contact">
       <h1>Form page</h1>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >First name</label
-        >
+        <label for="firstname" class="form-label">First name</label>
         <input
           type="text"
           class="form-control"
-          id="exampleFormControlInput1"
+          id="firstname"
           placeholder="Enter first name"
+          name="firstname"
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label"
-          >Last name</label
-        >
+        <label for="lastname" class="form-label">Last name</label>
         <input
+          name="lastname"
           type="text"
           class="form-control"
-          id="exampleFormControlInput2"
+          id="lastname"
           placeholder="Enter last name"
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput3" class="form-label">Subject</label>
+        <label for="subject" class="form-label">Subject</label>
         <input
+          name="subject"
           type="text"
           class="form-control"
-          id="exampleFormControlInput3"
+          id="subject"
           placeholder="Your subject"
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput4" class="form-label"
-          >Enter Email</label
-        >
+        <label for="email" class="form-label">Enter Email</label>
         <input
+          name="email"
           type="email"
           class="form-control"
-          id="exampleFormControlInput4"
+          id="email"
           placeholder="example@admin.com"
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea5" class="form-label"
-          >Message</label
-        >
+        <label for="message" class="form-label">Message</label>
         <textarea
+          name="message"
           class="form-control"
-          id="exampleFormControlTextarea5"
+          id="message"
           rows="3"
         ></textarea>
       </div>
 
-      <button onclick="alertFn()" class="btn btn-outline-warning">
-        Send
-      </button>
-    </div>
+      <input
+        class="btn btn-outline-warning"
+        type="submit"
+        value="Send Message"
+        id="submit"
+      />
+    </form>
     <!-- Form page end -->
 
     <!-- Bootstrap JavaScript -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom script -->
-    <!-- <script>
-      function sendButton() {
-        alert("Message was sent");
-      }
-    </script> -->
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

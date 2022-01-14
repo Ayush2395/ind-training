@@ -1,4 +1,1 @@
-function alertFn() {
-  alert("Hello");
-  console.log("Clicked");
-}
+console.log("Ayush");
