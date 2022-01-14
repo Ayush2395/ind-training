@@ -31,7 +31,11 @@
   position: relative;
   left: 50px;
   top: 120px;
-  width: 150px;
+  width: 450px;
+}
+
+.intro h1 {
+  width: 350px;
 }
 
 .intro span {
@@ -41,7 +45,11 @@
 
 .intro p {
   width: 320px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.intro p:nth-child(2){
+  width: 520px;
 }
 
 .intro h3 {
