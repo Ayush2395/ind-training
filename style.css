@@ -57,7 +57,7 @@
 }
 
 .button {
-  /* position: relative; */
+  position: relative;
   top: 120px;
   left: 80px;
 }

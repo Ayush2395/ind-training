@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WebApp</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./form.html">Form</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+    <!-- Form page start -->
+    <form method="POST" action="send" class="mt-5 container form-page">
+      <h1 id="#contact">Form page</h1>
+      <div class="mb-3">
+        <label for="firstname" class="form-label">First name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstname"
+          placeholder="Enter first name"
+          name="firstname"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="lastname" class="form-label">Last name</label>
+        <input
+          name="lastname"
+          type="text"
+          class="form-control"
+          id="lastname"
+          placeholder="Enter last name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input
+          name="subject"
+          type="text"
+          class="form-control"
+          id="subject"
+          placeholder="Your subject"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Enter Email</label>
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="example@admin.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          name="message"
+          class="form-control"
+          id="message"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <input
+        class="btn btn-outline-warning"
+        type="submit"
+        value="Send Message"
+        id="submit"
+      />
+    </form>
+    <!-- Form page end -->
+  </body>
+</html>
